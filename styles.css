@@ -3,32 +3,15 @@ body {
     margin: 0;
     padding: 0;
     line-height: 1.6;
-    background-color: #FFFFFF;
+    background-color: #FFFFFF; /* White background */
+    color: #041E42; /* Dark blue text */
 }
 
 header {
-    background: #041E42;
-    color: white;
+    background: #041E42; /* Dark blue background */
+    color: white; /* White text */
     padding: 20px;
     text-align: center;
-}
-
-footer {
-    background: #333; /* Dark footer */
-    color: white;
-    text-align: center;
-    padding: 10px;
-    position: relative;
-    bottom: 0;
-    width: 100%;
-}
-
-section {
-    padding: 20px;
-    margin: 20px;
-    background: white;
-    border-radius: 8px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
 nav ul {
@@ -42,17 +25,30 @@ nav ul li {
 }
 
 nav a {
-    color: white;
-    text-decoration: none;
+    color: white; /* White links */
+    text-decoration: none; /* Remove underline */
     padding: 5px 10px;
 }
 
 nav a:hover {
-    background: rgba(255, 255, 255, 0.3);
-    border-radius: 5px;
+    background: rgba(255, 255, 255, 0.3); /* Light hover effect */
+    border-radius: 5px; /* Rounded corners on hover */
 }
 
-body {
-    font-family: 'Roboto', sans-serif;
-} 
+section {
+    padding: 20px;
+    margin: 20px;
+    background: #FFFFFF; /* White background for sections */
+    border-radius: 8px; /* Rounded corners */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+}
 
+footer {
+    background: #041E42; /* Dark blue footer */
+    color: white; /* White text */
+    text-align: center;
+    padding: 10px;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
