@@ -3,11 +3,11 @@ body {
     margin: 0;
     padding: 0;
     line-height: 1.6;
-    background-color: #f4f4f4; /* Light gray background */
+    background-color: #FFFFFF;
 }
 
 header {
-    background: #4CAF50; /* Green background */
+    background: #041E42;
     color: white;
     padding: 20px;
     text-align: center;
@@ -26,9 +26,9 @@ footer {
 section {
     padding: 20px;
     margin: 20px;
-    background: white; /* White background for sections */
-    border-radius: 8px; /* Rounded corners */
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
 nav ul {
@@ -42,17 +42,17 @@ nav ul li {
 }
 
 nav a {
-    color: white; /* Link color */
-    text-decoration: none; /* Remove underline */
+    color: white;
+    text-decoration: none;
     padding: 5px 10px;
 }
 
 nav a:hover {
-    background: rgba(255, 255, 255, 0.3); /* Light hover effect */
-    border-radius: 5px; /* Rounded corners on hover */
+    background: rgba(255, 255, 255, 0.3);
+    border-radius: 5px;
 }
 
 body {
-    font-family: 'Roboto', sans-serif; /* Use Roboto font */
+    font-family: 'Roboto', sans-serif;
 } 
 
