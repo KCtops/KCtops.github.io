@@ -5,7 +5,7 @@ body {
     line-height: 1.6;
     background-color: #FFFFFF; /* White background */
     color: #041E42; /* Dark blue text */
-    padding-top: 80px; /* Matches header height */
+    padding-top: 160px; /* Matches header height */
     padding-bottom: 50px; /* Matches footer height */
 }
 
