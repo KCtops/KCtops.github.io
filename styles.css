@@ -5,41 +5,59 @@ body {
     line-height: 1.6;
     background-color: #FFFFFF; /* White background */
     color: #041E42; /* Dark blue text */
-    display: flex;
-    flex-direction: column;
-    min-height: 100vh;
+    padding-top: 80px; /* Matches header height */
+    padding-bottom: 50px; /* Matches footer height */
 }
 
 header {
     position: fixed;
-    top: 0; /* Sticks to the top */
+    top: 0; /* Stick to the top */
     left: 0;
     width: 100%;
     background: #041E42; /* Dark blue background */
     color: white; /* White text */
     padding: 20px;
     text-align: center;
-    z-index: 1000; /* Ensures visibility above other elements */
+    z-index: 1000; /* Ensure it stays above other content */
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 10px;
+}
+
+nav a {
+    color: white; /* White links */
+    text-decoration: none; /* Remove underline */
+    padding: 5px 10px;
+}
+
+nav a:hover {
+    background: rgba(255, 255, 255, 0.3); /* Light hover effect */
+    border-radius: 5px; /* Rounded corners on hover */
+}
+
+section {
+    padding: 20px;
+    margin: 20px;
+    background: #FFFFFF; /* White background for sections */
+    border-radius: 8px; /* Rounded corners */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow */
 }
 
 footer {
     position: fixed;
-    bottom: 0; /* Sticks to the bottom */
+    bottom: 0; /* Stick to the bottom */
     left: 0;
     width: 100%;
     background: #041E42; /* Dark blue footer */
     color: white; /* White text */
     text-align: center;
     padding: 10px;
-    z-index: 1000; /* Ensures visibility above other elements */
-}
-
-main {
-    flex: 1;
-    padding: 20px;
-    margin-top: 80px; /* Accounts for header height */
-    margin-bottom: 50px; /* Accounts for footer height */
-    background: #FFFFFF; /* White background for sections */
-    border-radius: 8px; /* Rounded corners */
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    z-index: 1000; /* Ensure it stays above other content */
 }
