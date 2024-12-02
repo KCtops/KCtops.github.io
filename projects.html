@@ -5,6 +5,27 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css">
     <title>Projects</title>
+    <style>
+        .pdf-container {
+            position: relative;
+            margin-bottom: 20px;
+        }
+        .pdf-container iframe {
+            width: 100%;
+            height: 400px;
+            transition: height 0.3s ease;
+        }
+        .minimize-btn {
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            background-color: #333;
+            color: white;
+            padding: 5px 10px;
+            cursor: pointer;
+            border: none;
+        }
+    </style>
 </head>
 <body>
     <header>
@@ -25,15 +46,23 @@
             
             <h4>Computational Problem-Solving Concepts Infographic</h4>
             <p>An assignment was to create an infographic showing my understanding of computational problem-solving concepts.</p>
-            <!-- Embed the PDF -->
-            <iframe src="computational-problem-solving.pdf" width="100%" height="400px"></iframe>
+            
+            <!-- PDF container with toggle functionality -->
+            <div class="pdf-container">
+                <button class="minimize-btn" onclick="togglePDF('computationalPDF')">Minimize</button>
+                <iframe id="computationalPDF" src="computational-problem-solving.pdf"></iframe>
+            </div>
             <!-- Provide a download link -->
             <p><a href="computational-problem-solving.pdf" download>Download Computational Problem-Solving Infographic (PDF)</a></p>
             
             <h4>Security Concepts Infographic</h4>
             <p>A group assignment was to create an infographic showing our group's understanding of security concepts. The other contributing member to the project was Keturah Khristina Young.</p>
-            <!-- Embed the PDF -->
-            <iframe src="security-concepts.pdf" width="100%" height="400px"></iframe>
+            
+            <!-- PDF container with toggle functionality -->
+            <div class="pdf-container">
+                <button class="minimize-btn" onclick="togglePDF('securityPDF')">Minimize</button>
+                <iframe id="securityPDF" src="security-concepts.pdf"></iframe>
+            </div>
             <!-- Provide a download link -->
             <p><a href="security-concepts.pdf" download>Download Security Concepts Infographic (PDF)</a></p>
         </div>
@@ -51,5 +80,21 @@
     <footer>
         <p>&copy; 2024 Kyle Collamer</p>
     </footer>
+
+    <script>
+        // Function to toggle the PDF visibility
+        function togglePDF(pdfId) {
+            var iframe = document.getElementById(pdfId);
+            var button = iframe.previousElementSibling;
+
+            if (iframe.style.height === "0px") {
+                iframe.style.height = "400px";  // Expand the PDF
+                button.innerText = "Minimize";
+            } else {
+                iframe.style.height = "0px";  // Minimize the PDF
+                button.innerText = "Expand";
+            }
+        }
+    </script>
 </body>
 </html>
