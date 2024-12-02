@@ -5,14 +5,20 @@ body {
     line-height: 1.6;
     background-color: #FFFFFF; /* White background */
     color: #041E42; /* Dark blue text */
+    padding-top: 80px; /* Matches header height */
+    padding-bottom: 50px; /* Matches footer height */
 }
 
 header {
     position: fixed;
+    top: 0; /* Stick to the top */
+    left: 0;
+    width: 100%;
     background: #041E42; /* Dark blue background */
     color: white; /* White text */
     padding: 20px;
     text-align: center;
+    z-index: 1000; /* Ensure it stays above other content */
 }
 
 nav ul {
@@ -45,11 +51,13 @@ section {
 }
 
 footer {
+    position: fixed;
+    bottom: 0; /* Stick to the bottom */
+    left: 0;
+    width: 100%;
     background: #041E42; /* Dark blue footer */
     color: white; /* White text */
     text-align: center;
     padding: 10px;
-    position: fixed;
-    bottom: 0;
-    width: 100%;
+    z-index: 1000; /* Ensure it stays above other content */
 }
